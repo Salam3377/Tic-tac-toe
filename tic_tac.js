@@ -41,7 +41,7 @@ let win = () => {
     } else {return false}
 }
 
-
+//
 // to start the game with first move of 'X'
 let start = () => {
   let next = 0;
