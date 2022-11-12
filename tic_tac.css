@@ -1,4 +1,4 @@
-#title {
+/* #title {
   color: white;
   text-align: center;
   font-size: 75px;
@@ -17,7 +17,7 @@ td {
 }
 .cell:hover {
   background-color: rgba(127,0,255,0.4);
-  -webkit-transition: all 0.5s ease;
+
 }
 table {
   position: absolute;
@@ -55,7 +55,6 @@ table tr td:last-child {
 }
 #reset:hover {
   background-color: rgba(255,102,102,0.4);
-  -webkit-transition: all 0.5s ease;
 }
 .winner > p {
   color: white;
@@ -63,4 +62,73 @@ table tr td:last-child {
   text-align: center;
   background-color: blue;
   
+} */
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+#game-board {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  margin-top: 70px;
+}
+
+.playableSpot {
+  border: solid white 1px;
+  height: 33%;
+  width: 33%;
+  flex: 0 1 33%;
+}
+.playableSpot:hover {
+  background-color: rgba(127,0,255,0.4);
+}
+#cell0, #cell3, #cell6 {
+  border-left: transparent
+}
+#cell2, #cell5, #cell8 {
+  border-right: transparent
+}
+#cell0, #cell1, #cell2 {
+  border-top: transparent
+}
+#cell6, #cell7, #cell8 {
+  border-bottom: transparent
+} 
+
+#reset {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -59px;
+  margin-top: 800px;
+  
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20%;
+}
+#reset:hover {
+  background-color: rgba(255,102,102,0.4);
+}
+
+#message-board {
+  margin-top: 70px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  width: 450px;
+  height: 70px;
+  border-bottom: solid white 1px;
 }
